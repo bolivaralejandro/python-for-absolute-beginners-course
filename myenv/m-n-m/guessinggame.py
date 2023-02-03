@@ -13,7 +13,16 @@ attempts = 0
 while attempts < attempt_limit:
     guess_text = input("How mny M&Ms are in the jar? ")
     guess = int(guess_text)
-    print(guess)
     attempts += 1
 
-print("Bye")
+    if mm_count == guess:
+        print(f"You got a free lunch! It was {guess}.")
+        break
+    elif guess < mm_count:
+        print("Sorry, that's too LOW!")
+    else:
+        print("That's too HIGH!")
+
+    
+
+print(f"Bye, you're done in {attempts}!")
