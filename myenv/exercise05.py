@@ -1,15 +1,15 @@
-number = int(input("Enter a number: "))
-
-
-while number !=0:
-
-    if number  == 0:
+#number = int(input("Enter a number: "))
+number =''
+while number != 0:
+    number = int(input("Enter a number: "))
+    if number == 0:
         break
     elif number %2 == 0:
         print("Even")
-        break
+        continue
+    #elif number %3 == 0:
+    #    print("Odd")
     else:
-        print ("Odd")
-        break
-print("Goodbye")
-    
+        print("Odd")
+        continue
+print("Goodbye")    
