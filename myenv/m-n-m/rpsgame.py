@@ -8,12 +8,18 @@ player_2 = input("Enter player 2's name ")
 rolls = ['rock', 'paper', 'scissors']
 
 roll1 = input(f"{player_1}, what is your roll? [rock, paper, scissors]: ")
+<<<<<<< HEAD
 roll1 = roll1.lower().strip()
+=======
+>>>>>>> 11d6344a2ae1ffb4880ebe5d490cc8af816f6a69
 if roll1 not in rolls:
     print(f"Sorry {player_1}, {roll1} is not an valid play!")
 
 roll2 = input(f"{player_2}, what is your roll? [rock, paper, scissors]: ")
+<<<<<<< HEAD
 roll2 = roll2.lower().strip()
+=======
+>>>>>>> 11d6344a2ae1ffb4880ebe5d490cc8af816f6a69
 if roll2 not in rolls:
     print(f"Sorry {player_2}, {roll2} is not an valid play!")
 
@@ -23,6 +29,7 @@ print(f"{player_2} rolls {roll2}")
 
 # Test for a winner
 winner = None
+<<<<<<< HEAD
 
 if roll1 == roll2:
     print("The play was tied!")
@@ -48,6 +55,8 @@ if winner is None:
 else:
     print(f"{winner} takes the game!") 
 
+=======
+>>>>>>> 11d6344a2ae1ffb4880ebe5d490cc8af816f6a69
 # Rock
 #     Rock -> tie
 #     Paper -> lose
